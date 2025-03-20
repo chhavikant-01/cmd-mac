@@ -27,5 +27,5 @@ brew install ngrok
 ngrok config add-authtoken <NGROX_TOKEN>
 ```
 ```sh
-ngrok http --url=<NGROX_DOMAIN> <LOCAL_PORT>
+ngrok http --url=<YOUR_FORWARDING_URL> <LOCAL_PORT>
 ```
