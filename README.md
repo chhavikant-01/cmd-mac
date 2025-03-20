@@ -29,3 +29,10 @@ ngrok config add-authtoken <NGROX_TOKEN>
 ```sh
 ngrok http --url=<YOUR_FORWARDING_URL> <LOCAL_PORT>
 ```
+## Prisma Schema Update
+```sh
+npx prisma generate
+```
+```sh
+npx prisma migrate dev --name did_this_update  # for development
+```
