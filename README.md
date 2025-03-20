@@ -18,3 +18,14 @@ sudo lsof -i :<PORT>
 ```sh
 kill <PID>
 ```
+
+## Reverse proxy
+```sh
+brew install ngrok
+```
+```sh
+ngrok config add-authtoken <NGROX_TOKEN>
+```
+```sh
+ngrok http --url=<NGROX_DOMAIN> <LOCAL_PORT>
+```
