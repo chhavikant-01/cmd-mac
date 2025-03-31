@@ -49,3 +49,8 @@ psql -c "\du" postgres
 ```sh
 psql -c "SHOW port;"
 ```
+
+### Connect to DB
+```sh
+psql -d dbname
+```
