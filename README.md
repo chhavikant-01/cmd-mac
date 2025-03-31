@@ -44,3 +44,8 @@ brew services start postgresql
 ```sh
 psql -c "\du" postgres
 ```
+
+### Get Port of your database ( db name is your username by default )
+```sh
+psql -c "SHOW port;"
+```
