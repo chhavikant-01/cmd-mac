@@ -54,3 +54,21 @@ psql -c "SHOW port;"
 ```sh
 psql -d dbname
 ```
+### Utility
+1. `\l` - List all databases
+2. `\c database_name` - Connect to a specific database
+3. `\dt` - List all tables in the current database
+4. `\dt+` - List all tables with additional details
+5. `\d table_name` - Describe a specific table's structure
+6. `\du` - List all users/roles
+7. `\df` - List all functions
+8. `\dv` - List all views
+9. `\dn` - List all schemas
+17. `\?` - Show help for all psql commands
+18. `\h [command]` - Get syntax help on a specific SQL command
+19. `\q` - Quit/exit psql
+20. `\password [username]` - Change a user's password securely
+21. `\conninfo` - Display current connection information
+23. `\s` - Display command history
+
+You can see all available commands by typing `\?` at the psql prompt.
