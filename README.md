@@ -36,3 +36,11 @@ npx prisma generate
 ```sh
 npx prisma migrate dev --name did_this_update  # for development
 ```
+## Start PostgreSQL
+```sh
+brew services start postgresql
+```
+### Get All Users
+```sh
+psql -c "\du" postgres
+```
