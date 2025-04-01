@@ -86,3 +86,16 @@ chmod 400 your-key-file.pem
 # for Ubuntu AMIs
 ssh -i your-key-file.pem ubuntu@your-instance-public-dns
 ```
+## GitHub SSH Key:
+```sh
+# Generate an SSH key if you don't have one:
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+```sh
+cat ~/.ssh/id_ed25519.pub
+```
+Copy the entire output and add this public key to your GitHub account (Settings → SSH and GPG keys)
+```sh
+# Verify your SSH connection to GitHub
+ssh -T git@github.com
+```
