@@ -77,3 +77,12 @@ psql -d dbname
 23. `\s` - Display command history
 
 You can see all available commands by typing `\?` at the psql prompt.
+## Connect to EC2
+```sh
+# ensure your .pem file has proper permissions
+chmod 400 your-key-file.pem
+```
+```sh
+# for Ubuntu AMIs
+ssh -i your-key-file.pem ubuntu@your-instance-public-dns
+```
