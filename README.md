@@ -50,6 +50,11 @@ psql -c "\du" postgres
 psql -c "SHOW port;"
 ```
 
+### Create DB
+```sh
+createdb dbname
+```
+
 ### Connect to DB
 ```sh
 psql -d dbname
