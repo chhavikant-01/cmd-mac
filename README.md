@@ -104,3 +104,7 @@ ssh -T git@github.com
 ```sh
 python3 -m venv venv
 ```
+### Activate
+```sh
+source venv/bin/activate
+```
