@@ -99,3 +99,8 @@ Copy the entire output and add this public key to your GitHub account (Settings 
 # Verify your SSH connection to GitHub
 ssh -T git@github.com
 ```
+
+## Python Virtual Environment
+```sh
+python3 -m venv venv
+```
