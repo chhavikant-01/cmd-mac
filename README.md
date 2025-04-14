@@ -108,3 +108,36 @@ python3 -m venv venv
 ```sh
 source venv/bin/activate
 ```
+
+## Curl
+
+### Basic Structure
+```sh
+curl [options] URL
+```
+
+### Request Methods
+```sh
+# GET request (default)
+curl https://api.example.com/endpoint
+
+# The -X flag specifies the HTTP method to use
+curl -X POST/PUT/DELETE https://api.example.com/endpoint
+```
+
+### Adding Headers
+```sh
+curl -H "Content-Type: application/json" -H "Authorization: Bearer token123" https://api.example.com/endpoint
+```
+
+### Sending Data
+```sh
+# POST with JSON data
+curl -X POST -H "Content-Type: application/json" -d '{"name":"John","age":30}' https://api.example.com/users
+```
+
+### Save Response
+```sh
+# Save response to file
+curl -o response.json https://api.example.com/endpoint
+```
